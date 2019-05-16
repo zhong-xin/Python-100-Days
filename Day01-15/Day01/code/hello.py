@@ -13,5 +13,6 @@ python hello.py
 print('hello, world!')
 # print("你好,世界！")
 print('你好', '世界')
-print('hello', 'world', sep=', ', end='!')
+# sep=’ ‘： 表示当输入多个打印的值时，各个值之间分割方式， 默认空格，可以自定义
+print('hello', 'world', sep=', ', end='!')  
 print('goodbye, world', end='!\n')
