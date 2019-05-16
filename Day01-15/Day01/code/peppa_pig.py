@@ -1,17 +1,18 @@
 """
 绘制小猪佩奇
 """
+# python2.6版本中后引入的一个简单的绘图工具，叫做海龟绘图(Turtle Graphics),turtle库是python的内部库,使用导入即可 import turtle
 from turtle import *
 
 
 def nose(x,y):
     """画鼻子"""
-    penup()
+    penup()  # 移动时不绘制图形,提起笔，用于另起一个地方绘制时用
     # 将海龟移动到指定的坐标
     goto(x,y)
-    pendown()
+    pendown()  # 移动时绘制图形,缺省时也为绘制
     # 设置海龟的方向（0-东、90-北、180-西、270-南）
-    setheading(-30)
+    setheading(-30)  # turtle.setheading旋转angle后，对其进行操作后，小乌龟的方向发生改变，为X轴正方向。
     begin_fill()
     a = 0.4
     for i in range(120):
@@ -179,13 +180,13 @@ def mouth(x,y):
 
 def setting():
     """设置参数"""
-    pensize(4)
-    # 隐藏海龟
+    pensize(4)  # turtle.pensize()：设置画笔的宽度
+    # 隐藏画笔海龟的形状
     hideturtle()
-    colormode(255)
-    color((255, 155, 192), "pink")
-    setup(840, 500)
-    speed(10)
+    colormode(255)  # #将其设置为1.0或255.随后 颜色三元组的r，g，b值必须在0 .. cmode范围内
+    color((255, 155, 192), "pink")  # turtle.color(color1, color2)	同时设置pencolor=color1, fillcolor=color2
+    setup(840, 500)  # turtle.setup(width, height, startx, starty),setup()设置窗体大小及位置
+    speed(10)  # turtle.speed(speed): 设置画笔移动速度,画笔绘制的速度范围[0,10]整数, 数字越大越快
 
 
 def main():
