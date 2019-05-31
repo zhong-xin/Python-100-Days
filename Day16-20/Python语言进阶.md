@@ -444,9 +444,11 @@
      ```
 
    - 位置参数、可变参数、关键字参数、命名关键字参数
-
+      参考：https://www.jianshu.com/p/a74442a18077?utm_campaign
+      
    - 参数的元信息（代码可读性问题）
-
+     参考：https://www.cnblogs.com/xiaoxiaolulu/p/9132781.html
+     
    - 匿名函数和内联函数的用法（`lambda`函数）
 
    - 闭包和作用域问题
