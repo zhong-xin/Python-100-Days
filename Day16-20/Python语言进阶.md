@@ -454,7 +454,8 @@
    - 闭包和作用域问题
 
      - Python搜索变量的LEGB顺序（Local --> Embedded --> Global --> Built-in）
-
+       参考：https://blog.csdn.net/oh5w6hinug43jvrhhb/article/details/78610969
+       https://www.cnblogs.com/JohnABC/p/4076855.html
      - `global`和`nonlocal`关键字的作用
 
        `global`：声明或定义全局变量（要么直接使用现有的全局作用域的变量，要么定义一个变量放到全局作用域）。
